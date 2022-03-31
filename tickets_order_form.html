@@ -43,37 +43,53 @@
 						<legend>Member Information:</legend>
 
 						<ul>
-							<li><label for="email">E-Mail:
-								<input type="text" name="email" id="email">
-							</label></li>
+							<li>
+								<label for="email">E-Mail:
+									<input type="text" name="email" id="email">
+								</label>
+							</li>
 
-							<li><label for="fname">First Name:
-								<input type="text" name="fname" id="fname" required>
-							</label></li>
+							<li>
+								<label for="fname">First Name:
+									<input type="text" name="fname" id="fname" required>
+								</label>
+							</li>
 
-							<li><label for="lname">Last Name:
-								<input type="text" name="lname" id="lname" required>
-							</label></li>
+							<li>
+								<label for="lname">Last Name:
+									<input type="text" name="lname" id="lname" required>
+								</label>
+							</li>
 
-							<li><label for="address">Address:
-								<input type="text" name="address" id="address">
-							</label></li>
+							<li>
+								<label for="address">Address:
+									<input type="text" name="address" id="address">
+								</label>
+							</li>
 
-							<li><label for="city">City:
-								<input type="text" name="city" id="city" required>
-							</label></li>
+							<li>
+								<label for="city">City:
+									<input type="text" name="city" id="city" required>
+								</label>
+							</li>
 
-							<li><label for="province">Province:
-								<input type="text" name="province" id="province" placeholder="2-character code" required>
-							</label></li>
+							<li>
+								<label for="province">Province:
+									<input type="text" name="province" id="province" placeholder="2-character code" required>
+								</label>
+							</li>
 
-							<li><label for="postal_code">Postal Code:
-								<input type="text" name="postal_code" id="postal_code" placeholder="6 characters" required>
-							</label></li>
+							<li>
+								<label for="postal_code">Postal Code:
+									<input type="text" name="postal_code" id="postal_code" placeholder="6 characters" required>
+								</label>
+							</li>
 
-							<li><label for="phone_number">Phone Number:
-								<input type="text" name="phone_number" id="phone_number" placeholder="ex. 999-999-9999">
-							</label></li>
+							<li>
+								<label for="phone_number">Phone Number:
+									<input type="text" name="phone_number" id="phone_number" placeholder="ex. 999-999-9999">
+								</label>
+							</li>
 						</ul>
 					</fieldset>
 
@@ -81,18 +97,65 @@
 						<legend>Ordering Information</legend>
 
 						<ul>
-							<label for="event">Event:
+							<li>
+								<label for="event">Event:
+									<select name="event" id="event" required>
+										<option value="cookie_decoration_contest">Cookie Decoration Contest</option>
+									
+										<option value="tree_decoration_contest">Tree Decoration Contest</option>
 
+										<option value="gift_of_light_ride-along">Gift of Light Ride-Along</option>
+
+										<option value="areakfast_with_aanta">Breakfast with Santa</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<label for="order_type">Order Type:
+									<select name="order_type" id="order_type" required>
+										<option value="member_package">Member Package</option>
+									
+										<option value="donor_package">Donor Package</option>
+
+										<option value="single_tickets">Single Tickets</option>
+									</select>
+								</label>
+							</li>
+
+							<li>	
+								<label for="number_of_tickets">Number of Tickets:
+									<input type="number" name="number_of_tickets" id="number_of_tickets" placeholder="Number of single tickets">
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset>
+						<legend>Payment Method</legend>
+
+						<label for="bill_me">
+							<input type="radio" name="payment_method" id="bill_me">Bill Me
+						</label>
+
+						<label for="credit_card">
+							<input type="radio" name="payment_method" id="credit_card">Credit Card
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Credit Card Information</legend>
+
+						<ul>
+							<label for="card_type">Card Type:
+								<select name="card_type" id="card_type">
+
+								</select>
 							</label>
 
-							<label for="order_type">Order Type:
-
+							<label for="card_number">Card Number:
+								
 							</label>
-
-							<label for="number_of_tickets">Number of Tickets:
-
-							</label>
-
 						</ul>
 					</fieldset>
 				</form>
