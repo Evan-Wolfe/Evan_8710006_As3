@@ -45,7 +45,7 @@
 						<ul>
 							<li>
 								<label for="email">E-Mail:
-									<input type="text" name="email" id="email">
+									<input type="email" name="email" id="email">
 								</label>
 							</li>
 
@@ -87,7 +87,7 @@
 
 							<li>
 								<label for="phone_number">Phone Number:
-									<input type="text" name="phone_number" id="phone_number" placeholder="ex. 999-999-9999">
+									<input type="tel" name="phone_number" id="phone_number" placeholder="ex. 999-999-9999">
 								</label>
 							</li>
 						</ul>
@@ -147,16 +147,82 @@
 						<legend>Credit Card Information</legend>
 
 						<ul>
-							<label for="card_type">Card Type:
-								<select name="card_type" id="card_type">
+							<li>
+								<label for="card_type">Card Type:
+									<select name="card_type" id="card_type">
+										<option value="visa">Visa</option>
 
-								</select>
-							</label>
+										<option value="master_card">Master Card</option>
 
-							<label for="card_number">Card Number:
-								
-							</label>
+										<option value="discover">Discover</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<label for="card_number">Card Number:
+									<input type="number" name="card_number" id="card_number" placeholder="16 digits" required>
+								</label>
+							</li>
+
+							<li>
+								<div id="expiry">
+									<label for="expiry_date">Expiration Date:
+										<select name="month" id="expiry_date">
+											<option value="january">January</option>
+											
+											<option value="february">February</option>
+
+											<option value="march">March</option>
+
+											<option value="april">April</option>
+
+											<option value="may">May</option>
+
+											<option value="june">June</option>
+
+											<option value="july">July</option>
+
+											<option value="august">August</option>
+
+											<option value="spetember">September</option>
+
+											<option value="october">October</option>
+
+											<option value="november">November</option>
+
+											<option value="december">December</option>
+										</select>
+
+										<select name="year" id="expiry_date">
+											<option value="2021">2021</option>
+
+											<option value="2022">2022</option>
+
+											<option value="2023">2023</option>
+
+											<option value="2024">2024</option>
+
+											<option value="2025">2025</option>
+
+											<option value="2026">2026</option>
+
+											<option value="2027">2027</option>
+										</select>
+									</label>
+								</div>
+							</li>
 						</ul>
+					</fieldset>
+
+					<fieldset>
+						<legend>Submit Your Order</legend>
+
+						<div id="buttons">
+							<input type="submit" name="submit" id="submit" value="Submit">
+
+							<input type="reset" name="reset" id="reset" value="Reset Fields">
+						</div>
 					</fieldset>
 				</form>
 			</main>
