@@ -45,7 +45,7 @@
 						<ul>
 							<li>
 								<label for="email">E-Mail:
-									<input type="email" name="email" id="email">
+									<input type="email" name="email" id="email" title="Enter your preferred e-mail, e.g.: ExampleEmail@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 								</label>
 							</li>
 
@@ -75,19 +75,19 @@
 
 							<li>
 								<label for="province">Province:
-									<input type="text" name="province" id="province" placeholder="2-character code" required>
+									<input type="text" name="province" id="province" placeholder="2-character code" title="Enter the 2 character code of your province, e.g.: ON for Ontario" pattern="[A-Z]{2}" required>
 								</label>
 							</li>
 
 							<li>
 								<label for="postal_code">Postal Code:
-									<input type="text" name="postal_code" id="postal_code" placeholder="6 characters" required>
+									<input type="text" name="postal_code" id="postal_code" placeholder="6 characters" title="Enter your postal code, e.g.: A1B 2C3" pattern="[A-Za-z0-9]{6}" required>
 								</label>
 							</li>
 
 							<li>
 								<label for="phone_number">Phone Number:
-									<input type="tel" name="phone_number" id="phone_number" placeholder="ex. 999-999-9999">
+									<input type="tel" name="phone_number" id="phone_number" placeholder="999-999-9999" title="Enter your contact phone number, e.g.: 012-345-6789" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 								</label>
 							</li>
 						</ul>
@@ -161,7 +161,7 @@
 
 							<li>
 								<label for="card_number">Card Number:
-									<input type="number" name="card_number" id="card_number" placeholder="16 digits" required>
+									<input type="number" name="card_number" id="card_number" placeholder="16 digits" minlength="16" maxlength="16" title="Enter your credit card number, e.g.: 3856 5767 8945 0920" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" required>
 								</label>
 							</li>
 

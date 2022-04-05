@@ -120,7 +120,7 @@ main h3 {
 main legend {
 	color: gray;
 	font-weight: bold;
-	font-size: 85%;
+	font-size: 90%;
 }
 
 main ul#product-categories {
@@ -164,7 +164,7 @@ main form#order_form fieldset input[type="radio"] {
 
 main form#order_form fieldset div#buttons {
 	padding-left: 29%;
-	font-size: 85%;
+	font-size: 90%;
 }
 
 main form#order_form fieldset div#buttons input {
@@ -183,7 +183,8 @@ main form#order_form fieldset ul li div#expiry{
 }
 
 main form#order_form fieldset ul li div#expiry label select{
-	margin-right: 6px;
+	margin-right: 12px;
+	font-size: 90%;
 }
 
 main form#order_form fieldset ul li label {
@@ -199,13 +200,15 @@ main form#order_form fieldset ul li label input {
 main form#order_form fieldset ul li label select {
 	list-style-type: none;
 	clear: right;
-	width: 15em;
+	width: 17em;
+	font-size: 90%;
 }
 
 main form#order_form fieldset ul li label select[id="expiry_date"] {
 	list-style-type: none;
 	clear: right;
 	width: auto;
+	font-size: 90%;
 }
 
 main form#order_form fieldset ul li label input[required] {
